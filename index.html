@@ -10,6 +10,7 @@
  
      <!-- Site Metas -->
     <title>Chamini Palliyaguru</title>  
+	
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -68,11 +69,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Services</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
-            </li> -->
+            
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
             </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contect Us</a>
@@ -91,10 +90,46 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-8 col-lg-8 slider-inner">
-									<h1 class="big animated">Hello I'm Chamini Palliyaguru</h1>
+									<!-- <h1 class="big animated">Hello I'm Chamini Palliyaguru</h1> -->
+
+									<h3 class="big animated" style="font-weight: bold; font-size: 1.8em;">Welcome to My Portfolio</h3>
+    <h1 class="big animated">I'm Chamini Palliyaguru</h1>
+	<!-- <h1>and</h1> -->
+    <div class="content" id="content-container">
+		<span style="font-weight: bold; font-size: 2.8em;" >and </span> 
+		<span id="content" style="display: inline;"></span>
+	</div>
+	
+
+    <script>
+        const contents = [
+            "Web Developer",
+            "Content Writer",
+            "Critical Thinker",
+            "Freelancer"
+        ];
+        
+        let currentIndex = 0;
+        const contentElement = document.getElementById('content');
+
+		function updateContent() {
+        contentElement.textContent = contents[currentIndex];
+        contentElement.style.color = "#009bb7"; // Set text color to green
+        contentElement.style.fontSize = "3em"; // Increase font size
+		contentElement.style.fontWeight = "bold";
+        currentIndex = (currentIndex + 1) % contents.length; // Cycle back to the first content
+    }
+
+
+        // Update the content every 1 second
+        setInterval(updateContent, 1000);
+
+        // Initialize the first content
+        updateContent();
+    </script>
 									
 
-									<div style="margin-left: 20px;">
+									<!-- <div style="margin-left: 20px;">
 										<ul style="list-style: none; padding-left: 0;">
 											<li class="animated" style="font-size: 30px; position: relative; padding-left: 25px;">
 												<span style="position: absolute; left: 0; top: 0; color: white; font-size: 30px;">&#9679;</span>
@@ -109,11 +144,9 @@
 												Freelancer
 											</li>
 										</ul><br/>
-										
-										<!-- <a class="btn-new from-middle animated" href="https://drive.google.com/file/d/1UOpva0bKmiybHJEVBeBsd_vs-K3QV7nU/view?usp=sharing">Download CV</a> -->
-									</div>
-									
-									
+									</div> -->
+									<br><br>
+										<a class="btn-new from-middle animated" href="https://github.com/chaminipalliyaguru">Check Projects</a>
 								</div>
 							</div>
 						</div>
@@ -311,7 +344,7 @@
 		<div class="container">
 			<div class="section-title text-center">
                 <!-- <h3>Blog</h3> -->
-				<h3>Portfolio</h3>
+				<h3>My Works</h3>
                 <p>This is some of my powerful work, transforming ideas into reality.</p>
             </div><!-- end title -->
 			
